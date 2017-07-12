@@ -22,6 +22,8 @@ public class LoginAction extends Action {
 		LoginDAO loginDAO = new LoginDAO();
 		boolean isUserValid = loginDAO.checkUserDetailsWithDB(username, password);
 		
+		
+		
 		if(isUserValid){
 			forward = "success";
 		} else {
